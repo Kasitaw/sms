@@ -1,0 +1,40 @@
+{
+  "name": "kasitaw/sms",
+  "description": "All in one SMS interface for Laravel. Supports isms and sms123",
+  "keywords": ["kasitaw", "sms-gateway", "sms-laravel", "isms-laravel", "sms123-laravel"],
+  "require": {
+    "php": ">=7",
+    "illuminate/support": "^6.0"
+  },
+  "require-dev": {
+    "laravel/framework": "^6.0",
+    "phpunit/phpunit": "^9.0",
+    "orchestra/testbench": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kasitaw\\Sms\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kasitaw\\Sms\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kasitaw\\Sms\\SmsServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Norlihazmey Ghazali",
+      "email": "norlihazmey.ghazali@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
